@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------------- JavaScript -------------->
+
+    <script src="app.js"></script>
+
+    <!------------------ HTML -------------------->
+<center><h1 class="topHeading">Budgeting App</h1></center>
+
+    <!------------ Budget Input Area -------------->
+
+    <center>
+    <div class="budget-div">
+        <h1 class="heading-1">Budget</h1>
+        <input type="number" id="budgetInp" class="budget-inp" placeholder="Enter Total Amount"> <br> <br>
+        <button class="budget-btn" onclick="budgetInp()">Set Budget</button>
+    </div>
+</center>
+    <!----------------- Expense-List ------------------>
+
+    <center><div id="expListID" class="Expense-List noDisp">
+        <p  class="ExpfirstPra1"> <b><span class="ExpfirstPra"><span class="date-exp" id="dateExp"></span> </span><span class="value" id="valueExp"></span> </b> </p>
+
+        <div id="DisNo" class="ExpDiv2 noDispr1">
+            <div class="ExpLeftDiv">
+            <img src="Img/coffie.png" alt="" class="ExpnImg">
+            <h3 class="ExpHeading">Restaurants & Cafe</h3>
+            <h5 id="resDueDate" class="ExpDate"> 34</h5>
+            <p class="Descri" id="descripDet">View_Description</p>
+
+        </div>
+    <div class="ExpRightDiv">
+            <h3 class="ExpPrice4"></h3>
+            <span class="ExpPrice"> $
+            <span id="ExpAmmoun" >0</span> </span>
+            <button onclick="Del()" class="ExpBtn">X</button>
+            <p id="Recurring" class="recurring">Recurring</p>
+        </div>
+        </div>
+        <div id="DisNo1" class="ExpDiv2 noDispr2">
+            <div class="ExpLeftDiv">
+            <img src="Img/images.png" alt="" class="ExpnImg">
+            <h3 class="ExpHeading">Cloths & Shopping</h3>
+            <h5  id="resDueDate1" class="ExpDate"> 34</h5>
+            <p class="Descri" id="descripDet1">View_Description</p>
+        </div>
+    <div class="ExpRightDiv">
+            <h3 class="ExpPrice4"></h3>
+            <span class="ExpPrice"> $
+                <span id="ExpAmmoun1" >0</span> </span>
+            
+            <button onclick="Del1()" class="ExpBtn">X</button>
+            <p id="Recurring1" class="recurring">Recurring</p>
+        </div>
+        </div>
+        <div id="DisNo2" class="ExpDiv2 noDispr3">
+            <div class="ExpLeftDiv">
+            <img src="Img/cardit card.png" alt="" class="ExpnImg">
+            <h3 class="ExpHeading">Credit & Loans</h3>
+            <h5 id="resDueDate2" class="ExpDate"> 34</h5>
+            <p class="Descri" id="descripDet2">View_Description</p>
+        </div>
+    <div class="ExpRightDiv">
+            <h3 class="ExpPrice4"></h3>
+            <span class="ExpPrice"> $
+                <span id="ExpAmmoun2" >0</span> </span>
+            
+            <button onclick="Del2()" class="ExpBtn">X</button>
+            <p id="Recurring2" class="recurring">Recurring</p>
+        </div>
+        </div>
+        <div id="DisNo3" class="ExpDiv2 noDispr4">
+            <div class="ExpLeftDiv">
+            <img src="Img/gift.png" alt="" class="ExpnImg">
+            <h3 class="ExpHeading">Gift Card</h3>
+            <h5 id="resDueDate3" class="ExpDate"> 34-May-2023</h5>
+            <p class="Descri" id="descripDet3">View_Description</p>
+        </div>
+    <div class="ExpRightDiv">
+            <h3 class="ExpPrice4"></h3>
+            <span class="ExpPrice"> $
+                <span id="ExpAmmoun3" >0</span> </span>
+            
+            <button onclick="Del3()" class="ExpBtn">X</button>
+            <p id="Recurring3" class="recurring">Recurring</p>
+        </div>
+        </div>
+        <div id="DisNo4" class="ExpDiv2 noDispr5">
+            <div class="ExpLeftDiv">
+            <img src="Img/other.jfif" alt="" class="ExpnImg">
+            <h3 class="ExpHeading">Other Expenses</h3>
+            <h5 id="resDueDate4" class="ExpDate"> 34-May-2023</h5>
+            <p class="Descri" id="descripDet4">View_Description</p>
+        </div>
+    <div class="ExpRightDiv">
+            <h3 class="ExpPrice4"></h3>
+            <span class="ExpPrice"> $
+                <span id="ExpAmmoun4" >0</span> </span>
+            
+            <button onclick="Del4()" class="ExpBtn">X</button>
+            <p id="Recurring4" class="recurring">Recurring</p>
+        </div>
+        </div>
+        <button class="expBtn" onclick="AddExpOpen()">Add Expenses</button>
+        </div>
+</center>
+
+
+    <!--------------------- Add Expense Form ----------------------->
+
+    <center>
+  <div id="AddExpOpen" >
+    <div id="AddexpClose" class="add-expDiv ExpDis">
+    <h3 class="addExp-3">Due Date</h3>
+    <input id="dueDate" type="date" class="Add-ExpInp">
+
+    <h3 class="addExp-Rec">Recurring</h3>
+    <select id="mySelect" class="AddExp-Select " >
+        <option value=""></option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        </select>
+        <!-- <button onchange="opbtn()">ok</button> -->
+
+        <div  class="addExpMainDiv">
+        <div id="amountDiv" class="AmountDiv">
+            <h3 class="amunt-heading">Total Amount</h3>
+            <input id="totalAmount" class="Amount-inp" type="number" placeholder=" $"> <br>
+        </div>
+
+    </div>
+    <h3 class="addExp-Rec">Category</h3>
+    <select id="selectOk" class="AddExp-Select ">
+        <option value=""></option>
+        <option value="Restaurants & Cafe">Restaurants & Cafe</option>
+        <option value="Cloths & Shopping">Cloths & Shopping</option>
+        <option value="Credit & Loans">Credit & Loans</option>
+        <option value="Gift Card">Gift Card</option>
+        <option value="Other Expenses">Other Expenses</option>
+        </select>
+        <h3  class="addExp-Rec">Discription</h3>
+        <input id="Descript" class="AddExp-Select " type="text">
+
+        <button class="expBtn LstBtn" onclick="addExpToList()">Add Expens</button>
+    </div>
+        <div class=""> 
+             <!----------------- Overview Details Screen ------------------>
+            <h1 class="OverviewDetails">Overview Details Screen</h1>
+            <center><div class="DetalDiv">
+                <div class="overView"><h1>Total Budget</h1> <span>Value: $<span id="totalBud">0</span> </span> </div>
+                <div class="overView">  <h1>Expenses</h1> <span>Value: $<span id="totlExp">0</span> </span> </div>
+                <div class="overView"> <h1>Balance</h1> <span>Value: $</span> <span id="blanExp">0</span></div>
+            </div></center>
+         </div>
+ </div>
+</center>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+/************* Budget Input Area  ************ */
+.budget-div {
+    border: 2px solid black;
+    height: 28vh;
+    width: 50vh;
+    border-radius: 16px;
+}
+.heading-1 {
+    font-family: 'Prompt', sans-serif;
+    color: grey;
+    margin-left: 2vh;
+    font-size: 4dvh;
+}
+.budget-inp {
+    width: 41dvh;
+    border-radius: 5px;
+    height: 4vh;
+    margin-left: 2vh;
+}
+.budget-btn {
+    font-weight: 500;
+    color: white;
+    background: rgba(116, 116, 222, 0.934);
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 2vh;
+    width: 23dvh;
+    height: 6vh;
+    font-size: 2.2dvh;
+}
+
+/******************** Expense-List **********************/
+
+.Expense-List{
+    font-family: 'Prompt', sans-serif;
+    border: 2px solid black;
+    width: 56vw;
+    border-radius: 9px;
+    margin-top: 2vw;
+}
+
+.Add-ExpInp{
+    border-radius: 5px;
+    margin-left: 1dvi;
+    height: 5vh;
+    width: 52vw;
+}
+.add-expDiv {
+    border-radius: 18px;
+    border: 2px solid black;
+    height: 76vh;
+    width: 56vw;
+    margin-left: 22dvi;
+    margin-top: 7vh;
+}
+
+.addExp-3{
+    color: grey;
+    margin-left: 1.4vw;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+}
+
+.AddExp-Select {
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 5vh;
+    width: 53vw;
+    margin-left: 1dvi;
+    margin-top: 7vh;
+}
+.addExp-Rec{
+    color: grey;
+    margin-left: 1.4vw;
+    margin-bottom: -6vh;
+    font-size: 3vh;
+}
+.amunt-heading {
+    margin-bottom: 2vh;
+    color: grey;
+    margin-left: -6.6vw;
+    font-size: 2.4vh;
+}
+.Amount-inp {
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 5vh;
+    width: 52vw;
+    margin-left: -7.5dvi;
+    margin-top: -1vh;
+}
+.addExpMainDiv {
+    display: flex;
+    margin-left: 8.5vw;
+}
+.topHeading{
+        margin-top: 0vh;
+        padding: 1vw;
+        text-align: center;
+        color: white;
+        background: rgba(75, 108, 215, 0.934);
+        font-family: 'Prompt', sans-serif;
+        margin-left: -2vh;
+        margin-right: -3vw;
+}
+.OverviewDetails {
+    color: grey;
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+}
+
+.DetalDiv{
+    color: white;
+    font-size: 1vw;
+    display: inline-flex;
+    font-family: 'Prompt', sans-serif;
+    padding: 1vh;
+    background: rgba(75, 108, 215, 0.934);
+    border-radius: 17px;
+    width: 60vw;
+}
+.overView {
+    margin-bottom: 1vw;
+    font-weight: bold;
+    margin-left: 7.3vw;
+}
+
+/* <!----------------- Expense-List ------------------> */
+
+.ExpnImg{
+    border-radius: 11px;
+    height: 3vw;
+}
+
+.ExpLeftDiv{   
+    width: 11vw;
+    margin-right: 45vw;
+}
+
+.ExpHeading {
+    width: 10vw;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1vw;
+    margin-left: 9vw;
+    margin-top: -3.6vw;
+    text-align: left;
+}
+
+.value{
+    margin-left: 17vw;
+}
+.ExpfirstPra{
+    margin-left: 40vw;
+    margin-right: 28vw;
+    font-size: 1vw;
+}
+.date-exp{
+    margin-left: -40vw;
+}
+.ExpDate {
+    width: 6vw;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 8vw;
+    margin-top: -1vw;
+    font-size: 0.6vw;
+}
+.ExpRightDiv {
+    height: 10vw;
+    width: 11vw;
+    margin-top: -5vw;
+    font-family: 'Prompt', sans-serif;
+    display: inline-flex;
+    margin-left: 32vw;
+}
+.ExpBtn {
+    font-weight: bolder;
+    border-radius: 15px;
+    font-family: 'Prompt', sans-serif;
+    height: 3vw;
+    margin-left: 2vw;
+    margin-top: -0.6vw;
+    margin-bottom: 4vw;
+    width: 3vw;
+    font-size: 1.5vw;
+    background: rgb(253 0 0 / 86%);
+    color: white;
+    border: 2px solid;
+}
+.ExpPrice {
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.3vw;
+    margin-left: 0vw;
+}
+.ExpfirstPra1{
+   
+    font-size: 1vw;
+}
+.ExpDiv2{
+    margin: 1vw;
+        background: rgba(75, 108, 215, 0.934);
+        height: 5vw;
+        width: 51vw;
+        padding-top: 2vw;
+        border-radius: 15px;
+        color: white;
+}
+.expBtn {
+    margin-left: 39vw;
+    font-weight: 500;
+    color: white;
+    background: rgba(116, 116, 222, 0.934);
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    width: 12vw;
+    height: 3vw;
+    font-size: 1.2vw;
+}
+.noDisp{
+    display: none;
+}
+.ExpDis{
+    display: none;
+}
+.OverviewDis{
+    display: none;
+}
+.noDispr1{
+    display: none;
+}
+.noDispr2{
+    display: none;
+}
+.noDispr3{
+    display: none;
+}
+.noDispr4{
+    display: none;
+}
+.noDispr5{
+    display: none;
+}
+.openDis{
+    border-radius: 10px;
+    width: 57vw;
+    background: #d9d9d9;
+    display: block;
+}
+.openDis2{
+    text-align: left;
+    height: 71vh;
+    border-radius: 21px;
+    background: #e3e6ed;
+    width: 57vw;
+    display: block;
+}
+.LstBtn{
+    margin-top: 1vw;
+}
+.OpnDiss{
+    margin: 1vw;
+    background: rgba(75, 108, 215, 0.934);
+    height: 5vw;
+    width: 51vw;
+    padding-top: 2vw;
+    border-radius: 15px;
+    color: white;
+}
+
+.highExp{
+    font-weight: bold;
+    color: rgb(233, 25, 25);
+}
+.Descri {
+    text-align: left;
+    font-size: 0.8vw;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 8.8vw;
+    margin-right: -83vw;
+}
+
+.recurring {
+    font-size: 0.9vw;
+    margin-top: 3vw;
+    margin-left: -8vw;
+}
